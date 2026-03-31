@@ -76,35 +76,6 @@ ModelEpochsAccuracyMAERMSER2 ScoreGCN2558.18%4.486.000.669T-GCN2557.75%4.616.060
 🏆 Key Finding
 GRU is the best model on BOTH datasets — achieving 90.18% accuracy on Los-Loop and 70.56% on Shenzhen with only 50 epochs of training.
 
-📁 Project Structure
-T-GCN-master/
-├── T-GCN/
-│   ├── T-GCN-PyTorch/          # Main PyTorch implementation
-│   │   ├── data/               # Dataset files (Los-Loop, Shenzhen)
-│   │   ├── models/             # Model definitions
-│   │   │   ├── gcn.py          # GCN model
-│   │   │   ├── gru.py          # GRU model
-│   │   │   └── tgcn.py         # T-GCN model (GCN + GRU)
-│   │   ├── tasks/              # Training task definitions
-│   │   ├── utils/              # Helper functions
-│   │   │   └── graph_conv.py   # Graph convolution utilities
-│   │   ├── main.py             # Main entry point
-│   │   ├── requirements.txt    # Dependencies
-│   │   └── lightning_logs/     # Training logs and checkpoints
-│   └── T-GCN-TensorFlow/       # TensorFlow implementation
-├── A3T-GCN/                    # Attention T-GCN variant
-├── AST-GCN/                    # Semantic T-GCN variant
-├── HoT-GCN/                    # Higher-order T-GCN
-├── STGCNN/                     # Spatio-temporal GCN
-├── data/                       # Shared datasets
-├── big picture.png             # Architecture diagram
-└── README.md                   # This file
-
-⚙️ Installation
-Prerequisites
-
-Python 3.8
-Windows / Linux / Mac
 
 Step 1 — Clone the repository
 bashgit clone https://github.com/Tanweer786-stark/T-GCN-Traffic-Prediction.git
